@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'plus-jakarta';
+    src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+/* COSO DE NAVEGACION Y FONDO*/
+
+.logo {
+    
+    display: block;
+    margin: 0;
+    width: 225px;
+    height: 125px;
+}
+
+.lista-nav {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.lista-nav li {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
+    display: inline;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+header {
+    font-family: plus-jakarta;
+    background-color: #190725;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+body{
+    background-image: url(../img/galaxy.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* BOTONES SEGUIDORES */
+
+.wasap {
+    width: 70px;
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.arriba {
+    width: 65px;
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+/* BLOQUE DE BIENVENIDA */
+
+.bienvenida{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 65px;
+    color: rgb(253, 253, 253);
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.bienvenida h2{
+    text-align: center;
+    font-weight: 550;
+    font-size: 45px
+}
+
+.wall {
+    border: 12px solid grey;
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carouselExample {
+    z-index: -1;
+    width: 70%;
+}
+
+.carousel-item img {
+    height: 600px;
+}
+
+/* ------------------------- CARDS DE PRODUCTOS Y EL DESTACADO ----------------------- */
+
+.destacado {
+    padding-top: 75px;
+    font-size: 30px;
+    color: rgb(253, 253, 253);
+    font-family: sans-serif;
+    text-align: center
+}
+
+.card {
+    margin-left: 40px;
+    margin-top: 75px;
+    border: 12px solid grey;
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+    background-color: rgb(27, 27, 27);
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    color: white;
+    z-index: -1;
+    margin-bottom: 70px;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card p {
+    margin: 15px 0;
+}
+
+.produdes {
+    border: 10px solid grey;
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+    background-color: rgb(27, 27, 27);
+    color: black;
+    position: absolute;
+    right: 45px;
+    top: -12%;
+    background-color: rgb(255, 231, 19);
+}
+
+.caja-large{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0 20px;
+    margin-bottom: 50px;
+    padding: 50px 50px;
+    border: 7px solid grey;
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+    text-align: center;
+    font-size: 30px;
+
+}
+.paga{
+    padding: 25px 0px
+}
+
+.paga p{
+    margin-top: 2px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 20;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+
+/* ----------------------- TODO EL PIE DE PAGINA ----------------------------- */
+
+footer {
+    font-family: plus-jakarta;
+    background-color: #190725;
+}
+
+.pie {
+    color: white;
+    font-size: 15px;
+    font-weight: 60;
+    padding-left: 10px;
+
+    display: inline;
+    text-align: center;
+}
+
+.pie p{
+    margin-bottom: 2px;
+}
+
+.igpie {
+    width: 70px;
+    left: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.fbpie {
+    width: 70px;
+    left: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.spotipie {
+    width: 150px;
+    left: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.lista-foot ul li {
+    display: inline;
+    margin: 3px;
+
+}
+
+.lista-foot {
+    padding: 10px 0 10px 625px;
+    display: block;
+}
+
+/* ------------------- REGISTRO ----------------- */
+
+/* Se que esto puedo hacerlo en 2 divs y hacerlo bien con flex pero busque la manera
+mas "simio" de hacerla para q quede bien desde un ordenador (obviamente esto aplica en las otras paginas) */
+
+.sect {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 50px 480px;
+}
+
+.tabla{
+    border: 12px solid grey;
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+}
+
+.sect div{
+    padding: 15px;
+}
+
+.sect h1 {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.sect table {
+    font-size: 16px;
+}
+
+.columiz{
+
+    background-color: rgb(31, 0, 43);
+    width: 350px;
+    font-size: 30px;
+}
+
+.columder{
+    padding: 50px 10px;
+    width: 270px;
+}
+
+.columder legend {
+    font-size: 22px;
+}
+
+/* ---------------------- NOSOTROS -------------------- */
+
+.caja-nos {
+    background-color:rgb(31, 0, 43);
+    width: 700px;
+    height: 350px;
+    font-size: 30px;  
+    color: white;
+    font-family: sans-serif;
+    margin: 0px 350px;
+    margin-bottom: 20px;
+    padding: 50px 70px;
+    border: 12px solid grey;
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+    text-align: center;
+}
+
+.caja-nos p{
+    padding: 15px 0px;
+}
+
+.marcas li{
+    display: inline;
+    padding: 15px;
+}
+
+.marcas{
+    padding: 20px 0px;
+    font-family: sans-serif;
+    background-color: white;
+    border: 7px solid grey;
+    border-left-color: rgb(70, 70, 70);
+    border-right-color: rgb(70, 70, 70);
+    font-size: 30px;  
+    color: black;
+    text-align: center;
+    margin: 50px 200px;
+    font-weight: 600;
+}
+
+.jolog {
+    width: 150px;
+    height: 100px;
+}
+
+.niklog{
+    height: 70px;
+    width: 200px;
+}
+
+.vatrlg{
+    height: 150px;
+    width: 150px;
+}
+
+.adlog{
+    height: 100px;
+    width: 150px;
+}
+
+.mapa{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+/* Claramente mucha informacion de la pagina va asi nomas o lugares que nada que ver por el hecho de que es una dada por amigos y todavia no existe */
