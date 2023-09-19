@@ -3,57 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/vatracuervo.png">
     <title>Vatra - Nosotros</title>
 </head>
 
 <body id="top">
-    <header class="header">
-        <a href="index.html">
-            <img src="../img/vatralogo.png" alt="logo" class="logo">
-        </a>
-        <nav>
-            <div class="busq">
-                <input type="text" placeholder="Buscar">
-                <input type="submit" value="Buscar">
-
+    <header>
+        <nav class="navbar navbar-expand-lg bg-violeta nav-cor">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img src="../img/vatralogo.png" alt="logo" class="logo">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav-cor">
+                    <a class="nav-link nav-cor" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-cor" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-cor" href="registro.html">Registrate</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link nav-cor" href="productos.html">Tienda</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-
-            <ul class="lista-nav">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="productos.html">Tienda</a>
-                </li>
-
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-
-                <li>
-                    <a href="registro.html">Registrate</a>
-                </li>
-
-                <li>
-                    
-                </li>
-            </ul>
-        </nav>
+          </nav>
     </header>
 
 
     <section>
 
-        <div class="bienvenida">
-            <h1>¿Que es Vatra Clothing?</h1>
-        </div>
+        <p class="bienvenida">¿Que es Vatra Clothing?</p>
 
         <div class="caja-nos">
             <p>
-                Somos una nueva marca de ropa diseñada por un grupo de amigos y a la vez una tienda online. 
+                Somos una tienda online ideada por un grupo de amigos y en un futuro se busca meter nuestra marca en las prendas. 
             </p>
             <p>
                 Ofrecemos variedad de ropa de marcas conocidas y la vez tenemos diseños propios. Pero no solo eso tambien vendemos mas cosas.
@@ -64,9 +62,10 @@
             </p>
         </div>
 
-        <div class="marcas">
+        <p class="destacado">¡Marcas que podes que podes encontrar!</p>
 
-            <p>¡Marcas que podes que podes encontrar!</p>
+        <div class="marcas">
+            
             <ul>
                 <li>
                     <a href="https://www.adidas.com.ar/">
@@ -96,7 +95,7 @@
     </section>
 
     <section>
-        <h1 class="bienvenida">¡Encontranos en Parque Chacabuco!</h1>
+        <h1 class="destacado">¡Encontranos en Parque Chacabuco!</h1>
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d105052.50365279565!2d-58.52470745281575!3d-34.63220129233456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x95bcca35a8919007%3A0x2ed862297298f160!2sAv.%20Eva%20Per%C3%B3n%201502%2C%20C1406%20CABA!3m2!1d-34.632228999999995!2d-58.4423063!5e0!3m2!1ses-419!2sar!4v1692657452963!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </div>
@@ -112,42 +111,74 @@
         <img src="../img/arriba.png" alt="arriba" class="arriba">
     </a>
 
+    <section class="faq">
 
+        <h2>Preguntas frecuentes</h2>
+
+        <div class="accordion accordion-flush acordeon" id="accordionFlushExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                ¿Hacen envios?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Si, pero por ahora nos limitamos unicamente en hacer los envios por toda Argentina, en un futuro planeamos expandirnos.</p></div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ¿Aceptan mercado pago u otras billeteras viruales?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Si, aceptamos todo tipo de billeteras virtuales, asi como efectivo y tarjetas.</p></div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Pregunta generica
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"><p>Respuesta generica.</p></div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pie">
+            <p>© 2023 Vatra Clothing - TODOS LOS DERECHOS RESERVADOS</p>
+            <p>Pagina hecha por Gaston Alcocer</p>
+        </div>
+    
+        <div class="lista-foot">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/gastialcocer/" alt="insta">
+                        <img src="../img/insta.webp" alt="insta">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="https://open.spotify.com/user/31r4h37bgz64kn2a3jsnzpsn3xt4" alt="spoti">
+                        <img src="../img/spotify.png" alt="spotify" id="spotipie">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="https://www.facebook.com/gaston.alcocer" alt="fb">
+                        <img src="../img/fb.png" alt="fb">
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+    </footer>
+
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
 </body>
-
-
-
-
-
-
-
-<footer>
-    <div class="pie">
-        <p>© 2023 Vatra Clothing - TODOS LOS DERECHOS RESERVADOS</p>
-        <p>Pagina hecha por Gaston Alcocer</p>
-    </div>
-
-    <div class="lista-foot">
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/gastialcocer/" alt="insta">
-                    <img src="../img/insta.webp" alt="insta" class="igpie">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://open.spotify.com/user/31r4h37bgz64kn2a3jsnzpsn3xt4" alt="spoti">
-                    <img src="../img/spotify.png" alt="spotify" class="spotipie">
-                </a>
-            </li>
-
-            <li>
-
-                <a href="https://www.facebook.com/gaston.alcocer" alt="fb">
-                    <img src="../img/fb.png" alt="fb" class="fbpie">
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
 </html>

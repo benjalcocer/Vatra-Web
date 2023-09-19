@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/vatracuervo.png">
     <title>Vatra - Productos</title>
 </head>
 
 <body id="top">
-    <header class="header">
-        <a href="index.html">
-            <img src="../img/vatralogo.png" alt="logo" class="logo">
-        </a>
-        <nav>
-            <div class="busq">
-                <input type="text" placeholder="Buscar">
-                <input type="submit" value="Buscar">
-
+    <header>
+        <nav class="navbar navbar-expand-lg bg-violeta nav-cor">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img src="../img/vatralogo.png" alt="logo" class="logo">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item nav-cor">
+                    <a class="nav-link nav-cor" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-cor" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-cor" href="registro.html">Registrate</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link nav-cor" href="productos.html">Tienda</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-
-            <ul class="lista-nav">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="productos.html">Tienda</a>
-                </li>
-
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-
-                <li>
-                    <a href="registro.html">Registrate</a>
-                </li>
-
-                <li>
-                    
-                </li>
-            </ul>
-        </nav>
+          </nav>
     </header>
 
 
@@ -56,62 +56,209 @@
     
 
     <section>
-        <div class="destacado">
-            <h1>Tienda</h1>
+            
+        <p class="bienvenida">Tienda</p>
+
+        <div class="cards-container">
+            
+            
+            <div class="card">
+                <img src="../img/joldan.jpg" alt="jordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1</p>
+                    <p>Precio: $125,000</p>
+                    <button>Leer mas</button>
+                    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/remeranegra.jpg" alt="lisa">
+                <div class="infocard">
+                    <p>Remera lisa</p>
+                    <p>Precio: $3500</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/lowjoldangrey.jpg" alt="lowjordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1 Low</p>
+                    <p>Precio: $100,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <img src="../img/buzo.jpg" alt="jordan1">
+        <p class="destacado" id="remera">Remeras</p>
 
-            <p>Buzos</p>
-            <p class="produdes">Nuevo</p>
-            <button>Leer mas</button>
+        <div class="cards-container">
+            <div class="card">
+                <img src="../img/joldan.jpg" alt="jordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1</p>
+                    <p>Precio: $125,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/remeranegra.jpg" alt="lisa">
+                <div class="infocard">
+                    <p>Remera lisa</p>
+                    <p>Precio: $3500</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/lowjoldangrey.jpg" alt="lowjordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1 Low</p>
+                    <p>Precio: $100,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <img src="../img/remeranegra.jpg" alt="lisa">
-            <p>Remeras</p>
-            <p class="produdes">Nuevo</p>
-            <button>Leer mas</button>
+        <p class="destacado">Buzos</p>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="../img/joldan.jpg" alt="jordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1</p>
+                    <p>Precio: $125,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/remeranegra.jpg" alt="lisa">
+                <div class="infocard">
+                    <p>Remera lisa</p>
+                    <p>Precio: $3500</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/lowjoldangrey.jpg" alt="lowjordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1 Low</p>
+                    <p>Precio: $100,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
         </div>
 
-        <div class="card">
-            <img src="../img/lowjoldangrey.jpg" alt="lowjordan1">
-            <p>Calzado</p>
-            <p></p>
-            <p class="produdes">Nuevo</p>
-            <button>Leer mas</button>
+        <p class="destacado">Otros</p>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="../img/joldan.jpg" alt="jordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1</p>
+                    <p>Precio: $125,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/remeranegra.jpg" alt="lisa">
+                <div class="infocard">
+                    <p>Remera lisa</p>
+                    <p>Precio: $3500</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/lowjoldangrey.jpg" alt="lowjordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1 Low</p>
+                    <p>Precio: $100,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="cards-container">
+                <div class="card">
+                    <img src="../img/joldan.jpg" alt="jordan1">
+                    <div class="infocard">
+                        <p>Air Jordan 1</p>
+                        <p>Precio: $125,000</p>
+                        <button>Leer mas</button>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="../img/remeranegra.jpg" alt="lisa">
+                    <div class="infocard">
+                        <p>Remera lisa</p>
+                        <p>Precio: $3500</p>
+                        <button>Leer mas</button>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="../img/lowjoldangrey.jpg" alt="lowjordan1">
+                    <div class="infocard">
+                        <p>Air Jordan 1 Low</p>
+                        <p>Precio: $100,000</p>
+                        <button>Leer mas</button>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <footer>
+        <div class="pie">
+            <p>© 2023 Vatra Clothing - TODOS LOS DERECHOS RESERVADOS</p>
+            <p>Pagina hecha por Gaston Alcocer</p>
+        </div>
+    
+        <div class="lista-foot">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/gastialcocer/" alt="insta">
+                        <img src="../img/insta.webp" alt="insta">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="https://open.spotify.com/user/31r4h37bgz64kn2a3jsnzpsn3xt4" alt="spoti">
+                        <img src="../img/spotify.png" alt="spotify" id="spotipie">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="https://www.facebook.com/gaston.alcocer" alt="fb">
+                        <img src="../img/fb.png" alt="fb">
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+    </footer>
+
+    <script src="../bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
 </body>
-
-<footer>
-    <div class="pie">
-        <p>© 2023 Vatra Clothing - TODOS LOS DERECHOS RESERVADOS</p>
-        <p>Pagina hecha por Gaston Alcocer</p>
-    </div>
-
-    <div class="lista-foot">
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/gastialcocer/" alt="insta">
-                    <img src="../img/insta.webp" alt="insta" class="igpie">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://open.spotify.com/user/31r4h37bgz64kn2a3jsnzpsn3xt4" alt="spoti">
-                    <img src="../img/spotify.png" alt="spotify" class="spotipie">
-                </a>
-            </li>
-
-            <li>
-
-                <a href="https://www.facebook.com/gaston.alcocer" alt="fb">
-                    <img src="../img/fb.png" alt="fb" class="fbpie">
-                </a>
-            </li>
-        </ul>
-    </div>
-</footer>
 </html>

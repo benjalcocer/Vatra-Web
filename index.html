@@ -11,38 +11,36 @@
 </head>
 
 <body id="top">
-    <header class="header">
-        <a href="index.html">
-            <img src="img/vatralogo.png" alt="logo" class="logo">
-        </a>
-        <nav>
-            <div>
-                <input type="text" placeholder="Buscar">
-                <input type="submit" value="Buscar">
-            </div>
-
-            <ul class="lista-nav">
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="pages/productos.html">Tienda</a>
-                </li>
-
-                <li>
-                    <a href="pages/nosotros.html">Nosotros</a>
-                </li>
-
-                <li>
-                    <a href="pages/registro.html">Registrate</a>
-                </li>
-
-                <li>
-                    
-                </li>
+    <nav class="navbar navbar-expand-lg bg-violeta nav-cor">
+        <div class="container-fluid">
+            <a href="../index.html">
+                <img src="img/vatralogo.png" alt="logo" class="logo">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item nav-cor">
+                <a class="nav-link nav-cor" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-cor" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-cor" href="pages/registro.html">Registrate</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link nav-cor" href="pages/productos.html">Tienda</a>
+              </li>
             </ul>
-        </nav>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section>
@@ -50,24 +48,6 @@
             <p>Bienvenido a Vatra Clothing</p>
             <h2>Calidad y comodidad</h2>
         </div>
-
-        <div id="carouselExample" class="carousel slide mx-auto">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="img/vatrawall.jpg" class="d-block w-100" alt="...">
-            </div>
-                <div class="carousel-item">
-                <img src="img/vatrawall.jpg" class="d-block w-100" alt="">
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
     </section>
     
     
@@ -81,47 +61,103 @@
 
 
     <section>
-        <div class="destacado">
-            <h1>Destacados</h1>
-        </div>
+            
+        <p class="destacado">Productos destacados</p>
 
-        <div class="card">
-            <img src="img/joldan.jpg" alt="jordan1">
-
-            <p>Air Jordan 1</p>
-            <p>Precio: $125,000</p>
-            <p class="produdes">Producto Destacado</p>
-            <button>Leer mas</button>
-            <button>Agregar al carrito</button>
-        </div>
-
-        <div class="card">
-            <img src="img/remeranegra.jpg" alt="lisa">
-            <p>Remera lisa</p>
-            <p>Precio: $3500</p>
-            <p class="produdes">Producto Destacado</p>
-            <button>Leer mas</button>
-            <button>Agregar al carrito</button>
-        </div>
-
-        <div class="card">
-            <img src="img/lowjoldangrey.jpg" alt="lowjordan1">
-            <p>Air Jordan 1 Low</p>
-            <p>Precio: $100,000</p>
-            <p class="produdes">Producto Destacado</p>
-            <button>Leer mas</button>
-            <button>Agregar al carrito</button>
-        </div>
-
-        <div class="caja-large">
-            <h3>¡Hacemos el envio a todo el pais!</p>
-            <div class="paga">   
-                <h3>¡Podes pagar como quieras!</p>
-                <p>Debito o credito</p> 
+        <div class="cards-container">
+            
+            
+            <div class="card">
+                <img src="img/joldan.jpg" alt="jordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1</p>
+                    <p>Precio: $125,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
-            <h3>¡Ofrecemos seguridad para tus datos!</p>
+
+            <div class="card">
+                <img src="img/remeranegra.jpg" alt="lisa">
+                <div class="infocard">
+                    <p>Remera lisa</p>
+                    <p>Precio: $3500</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/lowjoldangrey.jpg" alt="lowjordan1">
+                <div class="infocard">
+                    <p>Air Jordan 1 Low</p>
+                    <p>Precio: $100,000</p>
+                    <button>Leer mas</button>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+
         </div>
     </section>
+
+    <section id="blackcage" class="caja-large">
+
+            <div class=item1>
+                <h3>¡Enviamos tu compra!</h3> 
+                <i class="bi bi-truck"></i>
+                <p>Envio gratis con tu compra mayor a 45.000$</p>
+            </div>
+
+            <div class=item2>
+                <h3>¡Paga como quieras!</h3>
+                <i class="bi bi-credit-card"></i>
+                <p>Efectivo, debito, credito y billeteras virtuales</p>
+            </div>
+
+            <div class=item3>
+                <h3>¡Compra segura!</h3>
+                <i class="bi bi-lock"></i>
+                <p>Tus datos y compras estan seguras con nosotros</p>
+            </div>
+
+    </section>
+
+    <p class="destacado">Productos</p>
+
+    <section>
+        <div class="catalog">
+
+            <a href="pages/productos.html">
+                <div class="contenedor">
+                    <img src="img/joldan.jpg" alt="">
+                    <div class="contenedor-textos">
+                        <a href="pages/productos.html">
+                            <h3>Calzado</h3>
+                        </a>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pages/productos.html">
+                <div class="contenedor reverse">
+                    <img src="img/remeranegra.jpg" alt="">
+                    <div class="contenedor-textos">
+                            <h3>Remeras</h3>
+                    </div>
+                </div>
+            </a>
+
+            <a href="pages/productos.html">
+                <div class="contenedor">
+                    <img class="buzinho" src="img/buzo.jpg" alt="">
+                    <div class="contenedor-textos">
+                        <h3>Buzos</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
 
     <footer>
         <div class="pie">
@@ -133,19 +169,19 @@
             <ul>
                 <li>
                     <a href="https://www.instagram.com/gastialcocer/" alt="insta">
-                        <img src="img/insta.webp" alt="insta" class="igpie">
+                        <img src="img/insta.webp" alt="insta">
                     </a>
                 </li>
     
                 <li>
                     <a href="https://open.spotify.com/user/31r4h37bgz64kn2a3jsnzpsn3xt4" alt="spoti">
-                        <img src="img/spotify.png" alt="spotify" class="spotipie">
+                        <img src="img/spotify.png" alt="spotify" id="spotipie">
                     </a>
                 </li>
     
                 <li>
                     <a href="https://www.facebook.com/gaston.alcocer" alt="fb">
-                        <img src="img/fb.png" alt="fb" class="fbpie">
+                        <img src="img/fb.png" alt="fb">
                     </a>
                 </li>
             </ul>
