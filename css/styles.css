@@ -24,6 +24,10 @@ a {
   text-transform: uppercase;
 }
 
+ul {
+  list-style: none;
+}
+
 .bg-violeta {
   font-family: plus-jakarta;
   background-color: #210831;
@@ -145,7 +149,7 @@ body {
 
 .card {
   border-radius: 10px;
-  background-color: rgb(33, 8, 56);
+  background-color: #210831;
   color: white;
   text-align: center;
   font-weight: 600;
@@ -297,7 +301,7 @@ h3 {
 
 footer {
   font-family: plus-jakarta;
-  background-color: #190725;
+  background-color: #210831;
 }
 
 #spotipie {
@@ -347,7 +351,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
-  background-color: #1e0130;
+  background-color: #210831;
 }
 .registro form label {
   display: block;
@@ -386,7 +390,7 @@ footer {
 
 /* ---------------------- NOSOTROS -------------------- */
 .faq {
-  background-color: rgb(10, 28, 54);
+  background-color: #071725;
   padding: 20px;
   margin-bottom: 45px;
   text-align: center;
@@ -406,7 +410,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  background-color: rgb(31, 0, 43);
+  background-color: #210831;
   color: white;
   font-family: sans-serif;
   margin: 0 50px;
