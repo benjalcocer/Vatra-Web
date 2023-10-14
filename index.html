@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/vatracuervo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="description" content="¡Tienda de ropa online con multiples marcas a disposicion incluyendo la nuestra!">
     <meta name="keywords" content="vatra shopping, ropa, indumentaria, nike, adidas, jordan, vatra, tienda online">
     <title>Vatra - Inicio</title>
@@ -68,34 +69,39 @@
 
         <div class="cards-container">
             
-            
-            <div class="card">
-                <img src="img/joldan.jpg" alt="jordan1">
-                <div class="infocard">
-                    <p>Air Jordan 1</p>
-                    <p>Precio: $125,000</p>
-                    <button>Leer mas</button>
-                    <button>Agregar al carrito</button>
+            <div data-aos="flip-left">
+                <div class="card">
+                    <img src="img/joldan.jpg" alt="jordan1">
+                    <div class="infocard">
+                        <p>Air Jordan 1</p>
+                        <p>Precio: $125,000</p>
+                        <button>Leer mas</button>
+                        <button>Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="img/remeranegra.jpg" alt="lisa">
-                <div class="infocard">
-                    <p>Remera lisa</p>
-                    <p>Precio: $3500</p>
-                    <button>Leer mas</button>
-                    <button>Agregar al carrito</button>
+            <div data-aos="flip-left">
+                <div class="card">
+                    <img src="img/remeranegra.jpg" alt="lisa">
+                    <div class="infocard">
+                        <p>Remera lisa</p>
+                        <p>Precio: $3500</p>
+                        <button>Leer mas</button>
+                        <button>Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <img src="img/lowjoldangrey.jpg" alt="lowjordan1">
-                <div class="infocard">
-                    <p>Air Jordan 1 Low</p>
-                    <p>Precio: $100,000</p>
-                    <button>Leer mas</button>
-                    <button>Agregar al carrito</button>
+            <div data-aos="flip-left">
+                <div class="card">
+                    <img src="img/lowjoldangrey.jpg" alt="lowjordan1">
+                    <div class="infocard">
+                        <p>Air Jordan 1 Low</p>
+                        <p>Precio: $100,000</p>
+                        <button>Leer mas</button>
+                        <button>Agregar al carrito</button>
+                    </div>
                 </div>
             </div>
 
@@ -129,33 +135,38 @@
     <section>
         <div class="catalog">
 
-            <a href="pages/productos.html">
-                <div class="contenedor">
-                    <img src="img/joldan.jpg" alt="joldan1">
-                    <div class="contenedor-textos">
-                            <h3>Calzado</h3>
+            <div data-aos="fade-right">
+                <a href="pages/productos.html">
+                    <div class="contenedor">
+                        <img src="img/joldan.jpg" alt="joldan1">
+                        <div class="contenedor-textos">
+                                <h3>Calzado</h3>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <a href="pages/productos.html">
-                <div class="contenedor reverse">
-                    <img src="img/remeranegra.jpg" alt="lisa">
-                    <div class="contenedor-textos">
-                            <h3>Remeras</h3>
+            <div data-aos="fade-left">
+                <a href="pages/productos.html">
+                    <div class="contenedor reverse">
+                        <img src="img/remeranegra.jpg" alt="lisa">
+                        <div class="contenedor-textos">
+                                <h3>Remeras</h3>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <a href="pages/productos.html">
-                <div class="contenedor">
-                    <img class="buzinho" src="img/buzo.jpg" alt="buzo">
-                    <div class="contenedor-textos">
-                            <h3>Buzos</h3>
+            <div data-aos="fade-right">
+                <a href="pages/productos.html">
+                    <div class="contenedor">
+                        <img class="buzinho" src="img/buzo.jpg" alt="buzo">
+                        <div class="contenedor-textos">
+                                <h3>Buzos</h3>
+                        </div>
                     </div>
-                </div>
-            </a>
-
+                </a>
+            </div>
         </div>
     </section>
 
@@ -192,5 +203,9 @@
     
     
     <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

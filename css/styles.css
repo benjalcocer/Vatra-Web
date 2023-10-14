@@ -14,8 +14,8 @@ img {
 /* COSO DE NAVEGACION Y FONDO*/
 .logo {
   margin: 0;
-  width: 100%;
   height: 75px;
+  width: 100%;
 }
 
 a {
@@ -49,18 +49,18 @@ body {
 /* BOTONES SEGUIDORES */
 .wasap {
   width: 70px;
-  position: fixed;
   left: 15px;
   bottom: 20px;
   z-index: 1;
+  position: fixed;
 }
 
 .arriba {
   width: 65px;
-  position: fixed;
   right: 15px;
   bottom: 20px;
   z-index: 1;
+  position: fixed;
 }
 
 /* BLOQUE DE BIENVENIDA */
@@ -72,11 +72,11 @@ body {
   height: 50vh;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 55px;
   text-align: center;
+  flex-direction: column;
+  font-size: 55px;
   font-weight: 600;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 5px rgb(192, 15, 228);
@@ -156,8 +156,8 @@ body {
   font-size: 17px;
 }
 .card img {
-  height: 250px;
-  width: 100%;
+  height: 100%;
+  width: 250px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -187,6 +187,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 50px;
   background-color: black;
@@ -198,7 +199,6 @@ body {
   border: 7px solid grey;
   border-left-color: rgb(70, 70, 70);
   border-right-color: rgb(70, 70, 70);
-  text-align: center;
   font-size: 25px;
 }
 
@@ -326,27 +326,46 @@ footer {
 }
 
 /* ------------------- REGISTRO ----------------- */
-/* No llegue a terminar esta parte por ahora pero para la proxima va a estar mas completo */
 .cont-registro {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
 }
 
 .cont-res-pad {
-  margin: 30px auto;
+  margin: 40px;
   max-width: 1000px;
 }
 
 .unete {
   background-color: black;
   color: white;
+  padding: 10px;
 }
 .unete h3 {
   text-align: center;
+  padding: 0 20px;
+  text-align: justify;
 }
 .unete p {
   text-align: center;
+  padding: 0 20px;
+  text-align: justify;
+}
+.unete h4 {
+  text-align: center;
+  padding: 0 20px;
+  text-align: justify;
+}
+.unete ul {
+  text-align: center;
+  padding: 0 20px;
+  text-align: justify;
+  font-size: 15px;
 }
 
+.registro {
+  padding: 10px;
+  background-color: #210831;
+}
 .registro form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -388,6 +407,21 @@ footer {
   grid-column: 1/3;
 }
 
+@media (min-width: 700px) {
+  cont-res-pad {
+    padding: 0 50px;
+  }
+  .cont-registro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .cont-registro > * {
+    padding: 20px;
+  }
+  .unete h4, .unete ul, .unete p {
+    text-align: left;
+  }
+}
 /* ---------------------- NOSOTROS -------------------- */
 .faq {
   background-color: #071725;
@@ -408,6 +442,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 10px;
   background-color: #210831;
@@ -419,7 +454,6 @@ footer {
   border: 7px solid grey;
   border-left-color: rgb(70, 70, 70);
   border-right-color: rgb(70, 70, 70);
-  text-align: center;
   font-size: 30px;
 }
 .caja-nos p {
@@ -430,6 +464,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   padding: 20px 0px;
   font-family: sans-serif;
@@ -439,7 +474,6 @@ footer {
   border-right-color: rgb(70, 70, 70);
   font-size: 30px;
   color: black;
-  text-align: center;
   font-weight: 600;
 }
 .marcas li {
@@ -448,8 +482,8 @@ footer {
 }
 
 .jolog {
-  width: 150px;
   height: 100px;
+  width: 150px;
 }
 
 .niklog {
@@ -473,7 +507,5 @@ footer {
   margin-right: auto;
   margin-bottom: 50px;
 }
-
-/* Claramente mucha informacion de la pagina va asi nomas o lugares que nada que ver por el hecho de que es una dada por amigos y todavia no existe */
 
 /*# sourceMappingURL=styles.css.map */
