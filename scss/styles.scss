@@ -396,12 +396,18 @@ footer {
 
 /* ------------------- REGISTRO ----------------- */
 
+.cajota{
+    display: flex;
+    justify-content: center;
+    margin: 52px;
+}
+
+
 .cont-registro {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.5);
 }
 
 .cont-res-pad {
-    margin: 40px;
     max-width: 1000px;
 }
 
